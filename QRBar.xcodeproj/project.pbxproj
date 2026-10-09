@@ -61,9 +61,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9A45B695307930F8009505E3 /* make-dmg.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "make-dmg.sh"; sourceTree = "<group>"; };
 		9A9385F13078A6B100BC2FE2 /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = AppIcon.icon; sourceTree = "<group>"; };
 		9A9385F33078AA7600BC2FE2 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		9A9385F43078AA7600BC2FE2 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9A9385F43078AA7600BC2FE2 /* README.md */ = {isa = PBXFileReference; explicitFileType = text; path = README.md; sourceTree = "<group>"; };
 		A40000000000000000000110 /* QRCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCode.swift; sourceTree = "<group>"; };
 		A40000000000000000000111 /* QRBarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRBarApp.swift; sourceTree = "<group>"; };
 		A40000000000000000000112 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -101,6 +102,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A45B696307930F8009505E3 /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				9A45B695307930F8009505E3 /* make-dmg.sh */,
+			);
+			path = scripts;
+			sourceTree = SOURCE_ROOT;
+		};
 		A40000000000000000000100 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +118,7 @@
 				A40000000000000000000102 /* Sources */,
 				A40000000000000000000105 /* Tests */,
 				A40000000000000000000107 /* Resources */,
+				9A45B696307930F8009505E3 /* scripts */,
 				A40000000000000000000101 /* Products */,
 			);
 			sourceTree = "<group>";
