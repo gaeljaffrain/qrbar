@@ -19,4 +19,4 @@ Requires macOS 13+ and Xcode. Open `QRBar.xcodeproj`, select the `QRBar` scheme,
 
 ## License
 
-MIT
+QRBar is released under the MIT License. See [LICENSE](LICENSE) for details.
