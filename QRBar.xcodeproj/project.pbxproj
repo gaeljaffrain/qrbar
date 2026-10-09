@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9A9385F030789DFE00BC2FE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A9385EF30789DFE00BC2FE2 /* Assets.xcassets */; };
+		9A9385F23078A6B100BC2FE2 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = 9A9385F13078A6B100BC2FE2 /* AppIcon.icon */; };
 		A40000000000000000000130 /* QRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000110 /* QRCode.swift */; };
 		A40000000000000000000131 /* QRBarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000111 /* QRBarApp.swift */; };
 		A40000000000000000000132 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40000000000000000000112 /* ContentView.swift */; };
@@ -61,7 +61,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9A9385EF30789DFE00BC2FE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9A9385F13078A6B100BC2FE2 /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = AppIcon.icon; sourceTree = "<group>"; };
 		A40000000000000000000110 /* QRCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCode.swift; sourceTree = "<group>"; };
 		A40000000000000000000111 /* QRBarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRBarApp.swift; sourceTree = "<group>"; };
 		A40000000000000000000112 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -164,7 +164,7 @@
 		A40000000000000000000107 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				9A9385EF30789DFE00BC2FE2 /* Assets.xcassets */,
+				9A9385F13078A6B100BC2FE2 /* AppIcon.icon */,
 				A40000000000000000000114 /* QRBar.entitlements */,
 			);
 			path = Resources;
@@ -282,7 +282,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A9385F030789DFE00BC2FE2 /* Assets.xcassets in Resources */,
+				9A9385F23078A6B100BC2FE2 /* AppIcon.icon in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
