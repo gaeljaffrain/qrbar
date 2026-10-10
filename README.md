@@ -13,6 +13,23 @@ sandboxed without a network entitlement, so it cannot go online.
 - `Sources/QRBar`: SwiftUI `MenuBarExtra` app. Its `Info.plist` is generated from build settings (`LSUIElement`, so no Dock icon).
 - `Resources`: sandbox entitlements and app icon.
 
+## Versioning
+
+The marketing version (`X.Y.Z`) is set once per release; the build number
+increases with every distributed build and never resets.
+
+1. **Start a release:** in Xcode, set **Marketing Version** at the project
+   level, then commit only that change: `Bump version to X.Y.Z`.
+2. **Before archiving any build you distribute** (including beta builds), run
+   `agvtool next-version` from the repo root, then commit only that change:
+   `Bump build number to N`.
+3. **Ship the release:** tag the commit the shipped build was made from and
+   push the tag:
+```sh
+   git tag -a vX.Y.Z -m "QRBar X.Y.Z"
+   git push origin vX.Y.Z
+```
+
 ## Build
 
 Requires macOS 14+ and Xcode. Open `QRBar.xcodeproj`, select the `QRBar` scheme, and run. `Cmd-U` runs the tests.
