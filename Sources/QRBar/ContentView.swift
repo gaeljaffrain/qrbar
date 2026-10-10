@@ -27,6 +27,7 @@ struct ContentView: View {
                 .disabled(code == nil)
                 Spacer()
                 Menu {
+                    Button("About QRBar", action: showAbout)
                     Picker("Error correction", selection: $correction) {
                         Text("Low (7%)").tag(ErrorCorrection.low)
                         Text("Medium (15%)").tag(ErrorCorrection.medium)
@@ -102,6 +103,19 @@ struct ContentView: View {
         let url = FileManager.default.temporaryDirectory.appendingPathComponent("qrcode.png")
         try? png.write(to: url)
         return NSItemProvider(contentsOf: url) ?? NSItemProvider()
+    }
+    
+    private func showAbout() {
+        // Wait until the menu has finished closing, otherwise activation is ignored.
+        DispatchQueue.main.async {
+            if #available(macOS 14, *) {
+                NSApp.activate()
+            } else {
+                NSApp.activate(ignoringOtherApps: true)
+            }
+            NSApp.orderFrontStandardAboutPanel(nil)
+            NSApp.windows.last(where: { $0.isVisible && $0 is NSPanel })?.orderFrontRegardless() // force to front
+        }
     }
 }
 
