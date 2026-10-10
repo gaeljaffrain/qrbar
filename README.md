@@ -7,6 +7,8 @@ straight into another app. Codes are generated locally with Core Image
 (`CIQRCodeGenerator`): no network, no accounts, no dependencies. The app is
 sandboxed without a network entitlement, so it cannot go online.
 
+<img src="./Screenshots/QRBar.png" width="50%" alt="QRBar">
+
 ## Contents
 
 - `Sources/QRBarCore`: QR generation plus PNG/SVG output (UI-free, unit-tested). Built as a framework embedded in the app.
@@ -34,10 +36,10 @@ increases with every distributed build and never resets.
 
 Requires macOS 14+ and Xcode. Open `QRBar.xcodeproj`, select the `QRBar` scheme, and run. `Cmd-U` runs the tests.
 
-## Packaging a DMG
+## Packaging a dmg
 
 `scripts/make-dmg.sh` turns an exported, notarized `QRBar.app` into a signed,
-notarized, and stapled DMG with a drag-to-Applications window.
+notarized, and stapled dmg with a drag-to-Applications window.
 
 ### One-time setup
 
@@ -66,7 +68,7 @@ notarized, and stapled DMG with a drag-to-Applications window.
    scripts/make-dmg.sh path/to/QRBar.app
    ```
 
-The DMG is written to the current directory as `QRBar-<version>.dmg`, where the
+The dmg is written to the current directory as `QRBar-<version>.dmg`, where the
 version is read from the app's `CFBundleShortVersionString`.
 
 ### Options
@@ -82,6 +84,13 @@ Set these environment variables to change the defaults:
 ```sh
 SKIP_NOTARIZE=1 scripts/make-dmg.sh path/to/QRBar.app
 ```
+
+### Create a release on Github
+
+- (once) Install Github CLI: `brew install gh`
+- Create a release on Github:
+``gh release create <tag> <dmg file> --verify-tag --title "QRBar X.Y.Z" --notes-from-tag --draft``
+- Edit the notes on Github and click **Publish**
 
 ## License
 
