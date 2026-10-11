@@ -36,10 +36,10 @@ increases with every distributed build and never resets.
 
 Requires macOS 14+ and Xcode. Open `QRBar.xcodeproj`, select the `QRBar` scheme, and run. `Cmd-U` runs the tests.
 
-## Packaging a dmg
+## Packaging a DMG
 
 `scripts/make-dmg.sh` turns an exported, notarized `QRBar.app` into a signed,
-notarized, and stapled dmg with a drag-to-Applications window.
+notarized, and stapled DMG with a drag-to-Applications window.
 
 ### One-time setup
 
@@ -68,7 +68,7 @@ notarized, and stapled dmg with a drag-to-Applications window.
    scripts/make-dmg.sh path/to/QRBar.app
    ```
 
-The dmg is written to the current directory as `QRBar-<version>.dmg`, where the
+The DMG is written to the current directory as `QRBar-<version>.dmg`, where the
 version is read from the app's `CFBundleShortVersionString`.
 
 ### Options
